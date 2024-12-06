@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddReviews</title>
+</head>
+<body>
+
+    <h1>Add Company Review</h1>
+    <form action="/admin/create" method="post">
+        <div>
+            <p>Company Name:</p>
+            <input type="text" name="cname" placeholder="Enter Company name">
+        </div>
+        <div> 
+            <p>Pros:</p>
+            <textarea name="pros" id="pros" rows="4" cols="50" placeholder="Enter Your Review"></textarea>
+        </div>
+        <div>
+            <p>Cons:</p>
+            <textarea name="cons" id="cons" rows="4" cols="50" placeholder="Enter Your Review"></textarea>
+        </div>
+        <div>  
+            <label for="state">Rating
+            <select name="rating">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select>
+        </label>
+    </div>
+        <div>
+            <button type="submit">Submit Review</button>
+        </div>
+    </form>
+    
+</body>
+</html>
